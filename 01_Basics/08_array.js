@@ -38,3 +38,40 @@ console.log("C",myArr);//C [ 0, 4, 5 ]
 
 //so the diff bet slice & splice is not that in splice included..
 //also that the in array the elements goes on(chle gai)..
+
+
+
+//02_arrays
+const marvel_heros=["thors","ironman","spidermnan"]
+const dc_heros=["superman","flash","batman"]
+// marvel_heros.push(dc_heros)
+// console.log(marvel_heros)//[ 'thors', 'ironman', 'spidermnan', [ 'superman', 'flash', 'batman' ] ]
+ //so from above u can se that push se..array ko eke lement ki taarah lia 4th element.. coz array koi bhi data le leta ahi
+// console.log(marvel_heros[3][1]);//flash
+//but above it not right way..isse toh merge bhi nhi hua
+
+
+//doing concat
+//to use this new array Make so concat ke bad whi console krne ke lie
+
+// const allHeros=marvel_heros.concat(dc_heros)
+// console.log(allHeros)
+
+
+//another method easy then concat..//spread
+const all_new_heros=[...marvel_heros, ...dc_heros]
+console.log(all_new_heros);
+
+const another_array=[1,2,3,[4,5,6],7,[6,7,[4,5]]]
+const real_another_array=another_array.flat(Infinity)
+console.log(real_another_array);
+
+console.log(Array.isArray("Hitesh"))//false
+console.log(Array.from("Hitesh"))//[ 'H', 'i', 't', 'e', 's', 'h' ]
+console.log(Array.from({name:"hitesh"}))//[] intresting question for q
+
+let score1=100
+let score2=200
+let score3=300
+
+console.log(Array.of(score1,score2,score3));//when multiple variable ko array me convert krne ke lie
