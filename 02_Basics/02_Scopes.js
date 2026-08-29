@@ -41,3 +41,6 @@ const addTwo=function(num){
 
 //but if i put addTwo(5)on up of the funcn it will give error..
 // 2nd type ka funcn bna rhe ho... to access phel nhi kr kste..
+
+
+//brower ke ander gloabal object hai->Window
